@@ -1,0 +1,268 @@
+/* Items below concern the management and use of fonts. */
+@font-face {
+    font-family: 'Franklin Gothic Regular';
+    src: url('fonts/Franklin-Gothic-Medium.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('fonts/FrankRuhlLibre-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Franklin Gothic Demi Regular';
+    src: url('fonts/Franklin\ Gothic\ Demi\ Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Franklin Gothic Book Regular';
+    src: url('fonts/Franklin\ Gothic\ Book\ Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*items in this area follow universial scaling/ non-specific media rules.*/
+  
+  html {
+  font-size: 100%;
+  }
+  
+  /* Formatting for site elements to ensure consistency. */
+  * {
+    margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+    padding: 0;
+  }
+
+.logo {
+    position:  static;
+    padding: 15px 0;
+}
+
+.site_topper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site_menu {
+    width: 65%;
+    margin: 0 auto;
+    
+}
+
+.top_container {
+    -webkit-box-shadow: 0px 12px 8px -10px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 12px 8px -10px rgba(0,0,0,0.36);
+    box-shadow: 0px 12px 8px -10px rgba(0,0,0,0.36);
+
+    padding-bottom: 25px;
+}
+
+  /* Overall footer adherence. */
+  .bottom {
+    text-align: center;
+    font-family: 'Frank Ruhl Libre';
+    color:#792626;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.top_nav {
+    float:right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.top_nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 15px 0;
+}
+
+.top_nav a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+nav a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.homebigboy {
+    display: grid;
+        max-width: 999px;
+      grid-template-columns: 333px 333px 333px;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "header1 header1 header1"
+        "main1 main1 sidebar1"
+        "main1 main1 sidebar1"
+        "main1 main1 sidebar1"
+        "footer footer footer";
+}
+
+.homecontent {
+    grid-area: main1;
+}
+
+.specials {
+    grid-area: sidebar1;
+    background-color: #FFF3F3; 
+ }
+
+.specialsint {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.catbody_container {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.cathead_container {
+    display: flex;
+    justify-content: center;
+}
+
+.catheader_container {
+    min-width: 900px;
+    background-color: #FFF3F3;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-family: 'Frank Ruhl Libre';
+    line-height: 0.7;
+}
+
+.catsub_container {
+    display: flex;
+    justify-content: center;
+}
+
+.catcontent_container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.3rem;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Demi';
+    padding: 20px;
+}
+
+.recibigboy {
+display: grid;
+    max-width: 900px;
+  grid-template-columns: 225px 225px 225px 225px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+.reciheader_container {
+    max-width: 900px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-family: 'Frank Ruhl Libre';
+    grid-area: header;
+
+}
+
+.recidirections {
+    grid-area: main;
+    background-color: #FFF3F3;
+}
+
+.reciingredients {
+    grid-area: sidebar;
+}
+
+.sercontent_container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.3rem;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Book';
+    padding: 20px;
+}
+
+p.h {
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+p.a {
+    justify-self: start;
+}
+
+p.r {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+p.z {
+    font-family: 'Franklin Gothic Book';
+}
+
+/* Media rule for screens under 950px, this includes most mobile based systems whether portait tablets or phones */
+
+@media screen and (max-width: 949px) {
+
+}
+
+/* Media rule for 950x up screens, (desktop and landscape tablets)*/
+
+@media screen and (min-width: 950px) {
+
+}
+
+/* Media rule for arrow property for screens under px, this includes most mobile based systems, had to put out of order because of how CSS processes rules*/
+
+@media screen and (max-width: 620px) {
+
+}
+
+/*media rule for systems at 1300px & up, or wide monior/high res. */
+
+@media screen and (min-width: 1300px) {
+
+}
