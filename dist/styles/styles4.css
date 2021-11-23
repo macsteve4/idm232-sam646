@@ -1,0 +1,301 @@
+/* Items below concern the management and use of fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Sarabun:ital,wght@1,700&display=swap');
+  
+  /*items in this area follow universial scaling/ non-specific media rules.*/
+  
+  html {
+  font-size: 100%;
+  }
+  
+  /* Formatting for site elements to ensure consistency. */
+  * {
+    margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+    padding: 0;
+  }
+
+:root {
+    margin: 0;
+    --background: #1c1b1b;
+}
+
+.logo {
+    position:  static;
+    padding: 15px 0;
+    font-family: 'Paytone One', sans-serif;
+    color: #c51d1d;
+}
+
+a {
+	text-decoration: none;
+	color: #c51d1d;
+}
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: rgb(222, 222, 222);
+    height: 4px;
+    width: 1.55em;
+    border-radius: 3px;
+    position: relative;
+
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 8px;
+}
+
+.nav-toggle-label span::after {
+    top: 8px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-size: 1.2rem;
+    font-family: 'Sarabun', sans-serif;
+}
+
+nav a {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+
+
+nav a:hover {
+    color: rgb(164, 164, 164);
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 150ms;
+}
+
+.mcontainer {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 125px;
+}
+
+.page {
+    flex: 1;
+    padding-top: 125px;
+}
+
+
+.footer {
+    display: flex;
+    margin-top: 100px;
+  
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--background);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.35);
+  }
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+  
+  }
+  .footer__nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 0 10px;
+  }
+  
+
+.catbody_container {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.cathead_container {
+    display: flex;
+    justify-content: center;
+}
+
+.catheader_container {
+    min-width: 900px;
+    background-color: #FFF3F3;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-family: 'Frank Ruhl Libre';
+    line-height: 0.7;
+}
+
+p.h {
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .galleryItem {
+    float: left;
+    width: 28.33%;
+    text-align: center;
+    margin: 2.5% 2.5% 20px 2.5%;
+  }
+  
+  .galleryItem img {
+    max-width: 100%;
+  }
+  .galleryItem:hover {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+  }
+  
+  .galleryItem p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  /*
+  .img-row {
+    width: auto;
+    display:block;
+    position: relative;
+  }*/
+  @media only screen and (max-width : 475px),
+  only screen and (max-device-width : 475px){
+      .galleryItem {width: 21%;}
+    .galleryItem p
+    {font-size: 1em;}
+
+  }
+    
+/* Media rule for 950x up screens, (desktop and landscape tablets)*/
+
+@media screen and (min-width: 950px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display:grid;
+        grid-template-columns: 1fr auto minmax(650px, 3fr) 1fr;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,.35);
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a {
+        opacity: 1;
+    }
+
+    nav li {
+        margin-left: 2em;
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* Media rule for arrow property for screens under px, this includes most mobile based systems, had to put out of order because of how CSS processes rules*/
+
+@media screen and (max-width: 620px) {
+
+}
+
+/*media rule for systems at 1300px & up, or wide monior/high res. */
+
+@media screen and (max-width: 1750px) {
+
+    a.b {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 949px) {
+
+    a.b {
+        display: flex;
+    }
+
+}
