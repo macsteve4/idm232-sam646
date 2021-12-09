@@ -3,9 +3,14 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
 ?>
 <body>
 
-<div class="hero">
+<div class="herosearch">
 
-<h1 class="hi"> Welcome to RecipesForMe! </h1>
+<div class="search-bar" id="search-bar-large">
+            <form action="/">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><img src="/dist/images/fsearch.svg" alt="search icon"></button>
+            </form>
+        </div>
 
 </div>
 
@@ -15,7 +20,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
                 <div class="recipe-card-small" id="side-image1"></div>
             </a>
             <a href="recipe-detail.html">
-                <p class="roboto-title">GRILLED SALMON</p>
+                <p class="roboto-title">GRILLED SALMON & GREENS</p>
             </a>
         </div>
         <div class="hover-style">
@@ -23,7 +28,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
                 <div class="recipe-card-small" id="side-image1"></div>
             </a>
             <a href="recipe-detail.html">
-                <p class="roboto-title">GRILLED SALMON</p>
+                <p class="roboto-title">GRILLED SALMON & GREENS</p>
             </a>
         </div>
         <div class="hover-style">
@@ -31,7 +36,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
                 <div class="recipe-card-small" id="side-image1"></div>
             </a>
             <a href="recipe-detail.html">
-                <p class="roboto-title">GRILLED SALMON</p>
+                <p class="roboto-title">GRILLED SALMON & GREENS</p>
             </a>
         </div>
     </div>
@@ -64,7 +69,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
 </div>
 <div id="hp-banner">
     <a href="categories.html">
-        <h1 class="large-title elsie">HOLIDAY DINNERS</h1>
+        <h1 class="large-title elsie">FISH DINNERS</h1>
     </a>
 </div>
 <div class="recipe-card-grid">
@@ -72,7 +77,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -81,7 +86,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -90,7 +95,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -99,7 +104,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -108,7 +113,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -117,7 +122,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -126,7 +131,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -135,7 +140,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -144,7 +149,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -153,7 +158,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -162,7 +167,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
@@ -171,10 +176,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
         <div class="grid-item">
             <div class="middle">
                 <div class="grid-text">
-                    <p class="roboto">CHICKEN ROAST</p>
+                    <p class="roboto">CHICKEN STIRFRY</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<?php include_once __DIR__ .'/_global/footer.php'   ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/footer.php'   ?>

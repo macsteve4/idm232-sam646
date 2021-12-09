@@ -1,13 +1,14 @@
 <?php
-$db_connection = mysqli_connect(
-    $app['db_hostname'],
-    $app['db_username'],
-    $app['db_password'],
-    $app['db_database_name']
 
-);
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "root";
+$dbname = "local_idm232";
+$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
-if (!$db_connection) {
-    echo 'Connection Error: ' . mysqli_connect_error();
-    exit();
+if (mysqli_connect_error()) {
+    die("database connection failed: " .
+        mysqli_connect_error() .
+        " (" . mysqli_connect_errno() . ")");
 }
+?>
